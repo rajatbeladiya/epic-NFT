@@ -6,23 +6,26 @@ const main = async () => {
 
   let txn = await nftContract.makeAnEpicNFT();
   await txn.wait();
+  console.log("Minted NFT #1");
 
   // mint another nft
   txn = await nftContract.makeAnEpicNFT();
   await txn.wait();
-
-
-};
-
-const runMain = async () => {
-  try {
-    await main();
-    process.exit();
-  } catch (error) {
-    console.log(error);
-    process.exit(1);
+  console.log("Minted NFT #2");
+  
+  
+  };
+  
+  const runMain = async () => {
+    try {
+      await main();
+      process.exit();
+    } catch (error) {
+      console.log(error);
+      process.exit(1);
+    }
   }
-}
-
-runMain();
-
+  
+  runMain();
+  
+  
