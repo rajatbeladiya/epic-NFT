@@ -1,0 +1,1 @@
+[{"inputs":[{"internalType":"address","name":"name","type":"address"}],"name":"transfer2","outputs":[],"stateMutability":"nonpayable","type":"function"}]
